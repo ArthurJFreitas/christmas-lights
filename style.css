@@ -1,0 +1,60 @@
+
+body {
+    background: #000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.lamp {
+    height: 28px;
+    width: 14px;
+    border-radius: 50%;
+}
+
+.lamp:after {
+    content: "";
+    position: absolute;
+    width: 45px;
+    top: -7px;
+    left: 17px;
+    border-radius: 50%;
+    border-bottom: 2px solid #323232;
+    height: 20px;
+}
+
+.lamp:before {
+    width: 14px;
+    background: #323232;
+    height: 12px;
+    border-radius: 4px;
+    content: "";
+    position: absolute;
+    top: 0px;
+}
+
+
+.yellow {
+  background: #323232;
+}
+
+.green {
+    background: #323232;
+}
+
+
+.blue {
+  background: #323232;
+}
+
+.red {
+    background: #323232;
+}
