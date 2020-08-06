@@ -12,20 +12,28 @@ body {
     width: 100vw;
     height: 100vh;
     display: flex;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    justify-content: center;
 }
 
 .lamp {
+    display: flex;
+    margin: 8px 1%;
+    border-radius: 50%;
     height: 28px;
     width: 14px;
-    border-radius: 50%;
-}
+    background: rgba(0, 0, 0, 0.3);
+    position: relative;
+    transition: 1s all ease;
+  }
 
 .lamp:after {
     content: "";
     position: absolute;
     width: 45px;
-    top: -7px;
-    left: 17px;
+    top: -17px;
+    left: 7px;
     border-radius: 50%;
     border-bottom: 2px solid #323232;
     height: 20px;
@@ -38,23 +46,28 @@ body {
     border-radius: 4px;
     content: "";
     position: absolute;
-    top: 0px;
+    top: -8px;
+    
+}
+
+.main div:last-child:after {
+    display: none !important;
 }
 
 
 .yellow {
-  background: #323232;
+  background: #fffb00;
 }
 
 .green {
-    background: #323232;
+    background: #00ff6e;
 }
 
 
 .blue {
-  background: #323232;
+  background: #1862f5;
 }
 
 .red {
-    background: #323232;
+    background: #f51818;
 }
